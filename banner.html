@@ -1,0 +1,117 @@
+
+  <section class="banner">
+    <div class="banner-conteudo">
+      <div class="banner-texto">
+        <p>
+          O silêncio protege o<br>
+          agressor, a denúncia<br>
+          protege a vítima.<br>
+          Quebremos o silêncio!
+        </p>
+      </div>
+
+      <RouterLink to="/cadastro-usuario" class="banner-botao">
+        Se cadastre e busque apoio!
+      </RouterLink>
+    </div>
+  </section>
+
+
+<script>
+export default {
+  name: "Banner"
+}
+</script>
+
+<style>
+    .banner {
+  width: 100%;
+  min-height: 432px;
+
+  background-image: url("img/bannerHome.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* Área que fica por cima da frase que já existe na imagem */
+.banner-conteudo {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  width: 35%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 58px;
+}
+
+/* Caixa da frase */
+.banner-texto {
+  width: 85%;
+  min-height: 215px;
+
+  background-color: #bcbcbc;
+  border-radius: 0 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 20px 30px;
+
+  box-sizing: border-box;
+}
+
+/* Texto */
+.banner-texto p {
+  margin: 0;
+
+  color: #000;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(20px, 2vw, 31px);
+  font-weight: bold;
+  font-style: italic;
+
+  line-height: 1.25;
+}
+
+/* Botão */
+.banner-botao {
+  margin-top: 16px;
+
+  background-color: #f1f1f1;
+  color: #000;
+
+  text-decoration: none;
+
+  padding: 9px 28px;
+
+  border-radius: 25px;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.25);
+
+  transition: 0.2s ease;
+}
+
+.banner-botao:hover {
+  transform: scale(1.03);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+</style>
